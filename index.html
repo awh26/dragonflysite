@@ -13,8 +13,8 @@
 	<meta name="viewport" content="width=device-width">
 	<meta name="keywords"
 		content="dragonfly,NASA,floating-dragon">
-	<meta property="og:image" content="img/logo.jpg">
-	<link rel="icon" href="img/logo.jpg">
+	<meta property="og:image" content="img/logo.png">
+	<link rel="icon" href="img/logo.png">
 	<meta name="description" content="Purdue Dragonfly">
 	<meta name="author" content="Alex Hanna">
 	<title>Purdue Dragonfly</title>
@@ -39,26 +39,26 @@
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="#home"><img src="img/logo.png" style="width:60px;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  	<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  <div class="navbar-nav">
+			<a class="nav-item nav-link" href="#about">About</a>
+			<a class="nav-item nav-link" href="#specs">Design Specs</a>
+			<a class="nav-item nav-link" href="#profile">Mission Profile</a>
+			<a class="nav-item nav-link" href="#features">Features</a>
+			<a class="nav-item nav-link" href="#timeline">Timeline</a>
+			<a class="nav-item nav-link" href="#testing">Testing</a>
+			<a class="nav-item nav-link" href="#media">Media</a>
 
-	<section id="landing" style="height:100vh;">
-
-		<div id="navbar">
-			<!-- logo on top left corner of screen-->
-			<div id="logo">
-				<a href="index.html">
-					<h1 id="logotext">
-						AH
-					</h1>
-				</a>
-			</div>
-
-			<!-- animated button which goes to resume at bottom of page-->
-			<nav>
-				<ul>
-					<li><a href="#resume" id="resumeButton"><span>R&eacute;sum&eacute;</span></a></li>
-				</ul>
-			</nav>
+		  </div>
 		</div>
+	  </nav>
+
+	<section id="landing" style="height:80vh;">
 
 		<div id="home">
 
@@ -77,57 +77,410 @@
 
 
 		</div>
-
 	</section>
 
-	<!-- Portfolio section-->
-	<section>
+	<!-- About me section-->
+	<section id="about" style="background-color:#1c1c1c">
 		<div class="container">
-			<div class="row">
+			<div class="row" style="padding-top:5vh; padding-bottom:5vh;">
 				<div class="col-md-12">
 					<h2>
-						DRAGONfly
+						Introduction
 					</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
-					<h2>
-						About
-					</h2>
+				<div class="col-md-8">
+					<p>
+						DRAGONfly is an autonomous glider designed to deliver a data vault from high altitude weather balloons 
+						to ground stations. This vehicle was designed for the NASA Balloon Program Office as a part of the 
+						<a href="https://floatingdragon.nianet.org/" target="_blank"><u>FLOATing DRAGON</u></a> (Formulate, Lift, Observe, and Testing: Data Recovery and Guided On-Board Node) 
+						competition beginning in August 2022. After submitting a conceptual design in January 2023, the 
+						DRAGONfly was selected as one of the six finalist vehicles to be built for a test flight in August 2023.
+					</p>
 				</div>
-				<div class="col-md-4">
-					<h2>
-						Pic
-					</h2>
+				<div class="col-md-4" style="padding-bottom:5vh;">
+					<a href="https://floatingdragon.nianet.org/" target="_blank"><img src="https://floatingdragon.nianet.org/wp-content/uploads/2022/03/FLOATing-DRAGON-sm-150x150.png" alt="Floating Dragon Logo"></a>
 				</div>
-				<div class="col-md-4">
+		</div>
+	</section>
+
+	<!-- specs section-->
+	<section id="specs">
+		<div class="container">
+			<dix class="row" style="padding-top:5vh;">
+				<div class="col-md-12">
+					<img src="img/DRAGONfly.PNG" style="width:80%;">
+				</div>
+			</dix>
+			<div class="row" style="padding-top:5vh; padding-bottom:5vh;">
+				<div class="col-md-6">
 					<h2>
 						Requirements
 					</h2>
+					<ul style="text-align:left; padding-top:2vh;">
+						<li>
+							Completely autonomous operation
+						</li>
+						<li>
+							110,000-120,000 ft drop altitude
+						</li>
+						<li>
+							Land within 800 ft radius of target location
+						</li>
+						<li>
+							Maximum 10kg weight
+						</li>
+						<li>
+							Must withstand 10g+ shocks
+						</li>
+						<li>
+							Must withstand -70 to +65 C temperatures, 4 - 11 mBar pressures 
+						</li>
+						<li>
+							Carry payload 0.25kg, 144 x 66 x 25mm
+						</li>
+						<li>
+							Descend in 1.5 hours or less 
+						</li>
+						<li>
+							Must be reusable
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-md-6" >
+					<h2>
+						Design Specs
+					</h2>
+					<p style="text-align:left; padding-left:5vw; padding-top:2vh;">
+						Weight: 9.5 kg
+						<br>
+						Dimensions: 120 x 45 x 45 cm
+						<br>
+						Wing Span: 140 cm
+						<br>
+						Wing Chord: 20.5 cm
+						<br>
+						Wing Airfoil: Clark Y
+						<br>
+						Tail Span: 60 cm
+						<br>
+						Tail Chord: 20 cm
+						<br>
+						Tail Airfoil: NACA 0012
+					</p>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- mission profile section-->
+	<section id="profile" style="background-color:#1c1c1c;">
+		<div class="container" style="padding-bottom:5vh;">
+			<div class="row" style="padding-top:5vh; padding-bottom:2vh;">
+				<div class="col-md-12">
+					<h2>Mission Profile</h2>
+				</div>
+			</div>
+			<div class="row">
+				<img src="img/missionprofile.jpg" style="width:100%">
+			</div>
+		</div>
+	</section>
+
+	<!-- features section-->
+	<section id="features">
+		<div class="container">
+			<div class="row" style="padding-top:5vh;">
+				<div class="col-md-12">
+					<h2>Features</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Cruciform Tail/Air Brake</h2>
+					<p>In the first stage of descent, the node dives through the upper atmosphere. To slow its decsent to subsonic speeds and maintain the nose pointed down, the cruciform tail control surfaces act as an airbrake. The controls team is working on an algorithm which will be able to allow for the controlled descent.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/features/tailCS.gif" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Folding Wings</h2>
+					<p>Once the node passes through the high winds in the upper atmosphere and reaches air where lift can be achieved, the wings deploy. The wings are stowed in the fuselage for aerodynamic purposes in the dive but fold outwards for the glide. There are no control surfaces on the wings, and the node is entirely controlled using the tail control surfaces.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/features/wingFolding.gif" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Deployment System</h2>
+					<p>To release the node from the gondola, four linear actuators retract when a signal is received from the gondola. This system is currently very heavy and complicated, and will be redsigned for the ICE-DRAGON campaign.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/features/deployment.gif" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Composite Based Airframe</h2>
+					<p>The entire airframe of the Dragonfly V2 is composite-based. Composites were chosen for their superior structural qualities, ease of use in prototyping, and low weight. Composites used include carbon fiber rods, fiberglass reinforced foam, and carbon fiber reinforced onyx.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/features/airframe.jpeg" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Waypoint Planning Algorithm</h2>
+					<p>An on-board raspberry pi performs an algorithm for waypoint selections, deployment armings, and dive-glide phase transitions. In the image to the left, the waypoint planning algorithm recognizes routes A, C, and F as feasible as they each reach the target destination. Route F is ultimately selected due to its increased time efficiency.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/features/SampleDescents.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:5vh;">
+				<div class="col-md-6">
+					<h2>Autopilot/Controls</h2>
+					<p>The Dragonfly utilizes an onboard Pixhawk 6C as a flight computer. This stabilizes the node with integrated IMU sensors and provides GNSS data to the Raspberry-Pi (which performs algorithm). Ardupilot autopilot is used for the dive and glide phase stabilization. The MAVSDK protocol is used for communication between the Raspberry Pi and Pixhawk.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/features/ardupilot.png" style="width:100%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Timeline section-->
+	<section id="timeline" class="py-5" style="padding-left:20vw; background-color:#1c1c1c">
+		<div class="row" style="width:60vw; padding-bottom:5vh;">
+			<div class="col-md-12">
+				<h2>
+					Timeline
+				</h2>
+			</div>
+		</div>
+		<ul class="timeline" style="width:60vw;">
+			<li class="timeline-item mb-5" style="color:#89DB89;">
+				<h5 class="fw-bold">FLOATing DRAGON Notice of Intent Submitted</h5>
+				<p class="text-muted mb-2 fw-bold">September 15, 2022 - West Lafayette, IN</p>
+				<p class="text-muted">
+				Purdue Dragonfly team submits notice of intent for the FLOATing DRAGON competition. The team consists of 6 team students in the AAE418 class.
+				</p>
+			</li>
+		
+			<li class="timeline-item mb-5" style="color:#89DB89;">
+				<h5 class="fw-bold">Critical Design Review</h5>
+				<p class="text-muted mb-2 fw-bold">January 8, 2023 - West Lafayette, IN</p>
+				<p class="text-muted">
+				The Dragonfly Critical Design Review was submitted to NASA for review. This consisted of a written report and video detailing the vehicle concept and how it would satisfy NASA's requirements.
+				</p>
+				<p class="text-muted">
+				A link to the PDR can be found <a href="https://youtu.be/NBAIsppQLYo?si=sSB9evm0sjOvVRQn" target="_blank">here</a>. A link to the CDR can be found <a href="https://youtu.be/t1bzjc0N9dk?si=kaiMnNqyA20cA__o" target="_blank">here</a>.
+				</p>
+				<p class="text-muted">
+				The team was selected as one of the six finalist teams on January 30th, 2023.
+				</p>
+			</li>
+
+			<li class="timeline-item mb-5" style="color:#89DB89;">
+				<h5 class="fw-bold">Software Design Review</h5>
+				<p class="text-muted mb-2 fw-bold">July 14, 2023 - Video Conference</p>
+				<p class="text-muted">
+				A month before flight, the software design review was held over a video call with NASA. The Dragonfly team presented test cases using sample sounding files to prove the control systems and waypoint planning algorithm would be successful.
+				</p>
+			</li>
+
+			<li class="timeline-item mb-5" style="color:#89DB89;">
+				<h5 class="fw-bold">Flight Readiness Review and Integration</h5>
+				<p class="text-muted mb-2 fw-bold">August 11, 2023 - Fort Sumner, NM</p>
+				<p class="text-muted">
+				Four team members traveled to Ft. Sumner, NM with the Dragonfly to complete final tests with the BPO and integrating the deployment system into the NASA gondola.
+				</p>
+			</li>
+
+			<li class="timeline-item mb-5" style="color:#89DB89;">
+				<h5 class="fw-bold">Balloon Flight Carrying Dragonfly</h5>
+				<p class="text-muted mb-2 fw-bold">August 19, 2023 - Fort Sumner, NM</p>
+				<p class="text-muted">
+				Although the FAA denied the nodes to be dropped, NASA allowed for the nodes to be carried with the gondola as planned. The flight, which the BPO referred to as the Salter Test Flight, landed 122 Nm southwest of the launch site. 
+				</p>
+				<p class="text-muted">
+				More information about the test flight can be found <a href="https://towerfts.csbf.nasa.gov/Maps/ConvGps730NT.htm" target="_blank">here</a>.
+				</p>
+			</li>
+
+			<li class="timeline-item mb-5" style="color:#89DB89;">
+				<h5 class="fw-bold">ICE-DRAGON Notice of Intent Submitted</h5>
+				<p class="text-muted mb-2 fw-bold">November 6, 2023 - West Lafayette, IN</p>
+				<p class="text-muted">
+				Purdue Dragonfly team submits notice of intent to participate in the ICE-DRAGON challenge. Teams from Notre Dame, Princeton, and UT Austin also submit notice of intents.
+				</p>
+			</li>
+
+			<li class="timeline-item mb-5">
+				<h5 class="fw-bold">Dive and Glide Controls Test Flights</h5>
+				<p class="text-muted mb-2 fw-bold">March 2024 - West Lafayette, IN</p>
+				<p class="text-muted">
+				To test the controls systems, the team will be conducting flight tests beginning in March 2024 with real prototypes. For V1, simulations were performed but never real flight tests due to time constraints.
+				</p>
+			</li>
+
+			<li class="timeline-item mb-5">
+				<h5 class="fw-bold">Flight Readiness and Integration</h5>
+				<p class="text-muted mb-2 fw-bold">July 2024 - Palestine, TX</p>
+				<p class="text-muted">
+				The team will travel to Palestine, TX to perform a drop test and integrate the Dragonfly into the NASA gondola system.
+				</p>
+			</li>
+
+			<li class="timeline-item mb-5">
+				<h5 class="fw-bold">ICE-DRAGON Flight</h5>
+				<p class="text-muted mb-2 fw-bold">January 2025 - Antarctica</p>
+				<p class="text-muted">
+				A balloon will be launched in Antarctica with the Dragonfly. The team will not be traveling to Antarctica but will be able to stream live video and data.
+				</p>
+			</li>
+		</ul>
+	</section>
+
+<!-- testing section-->
+	<section id="testing">
+		<div class="container">
+			<div class="row" style="padding-top:5vh;">
+				<div class="col-md-12">
+					<h2>Testing</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>CFD</h2>
+					<p>Computational fluid dynamic analysis was performed on the entire vehicle and different wing/tail orientations. Entire vehicle analysis focused on the drag produced by fully deflected air brakes and other aerodynamic properties. Wing/tail orientation analysis focused on the affect of different combinations of wing and tail placements and how they would interact.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/testing/cfd.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Gondola FEA</h2>
+					<p>Finite element analysis was performed on the gondola to determine whether the system would be able to withstand a 10g shock and not prematruely drop the node. This was especially important for the first FLOATing DRAGON campaign because the node could not be dropped prematurely over populus areas of New Mexico. FEA was presented at the structural design review with NASA in April 2023 and again revisited in the flight readiness review in July 2023.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/testing/gondolaFEA.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Vehicle FEA</h2>
+					<p>Finite element analysis was performed on the vehicle to ensure that the structures would be able to maintain forces endured during the mission. This includes wing bending, enduring gusts, and shock from the parachute deployment.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/testing/vehicleFEA.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Wing Optimization</h2>
+					<p>The wing span and chord were optimized using algorithms on structural bending and lift during design cruise and stall speed.s</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/testing/wingOpt.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Stability and Controllability</h2>
+					<p>Stability and controllability analysis was performed using XFLR5. Longitudinal stability (measured by static margin) and lateral/directional stability were studied in order to ensure that the system could maintai static and dynamic stability throughout flight.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/testing/xflrplane.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Wind Tunnel Testing</h2>
+					<p>Wind tunnel tests were performed in the Boeing Wing Tunnel at Purdue. These were preliminary tests performed in Fall 2022 to demonstrate the drag produced by the airbrake.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/testing/windTunnel.png" style="width:100%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- media section-->
+	<section id="media" style="padding-top:5vh; padding-bottom:5vh; background-color:#1c1c1c">
+		<h2 style="text-align:center; padding-bottom:2vh;">Media</h2>
+		
+		<div class="container">
+		  	<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="img/balloon.jpg" style="width:100%">
+		  	</div>
+		
+		  	<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="img/teamwithgondola.jpeg" style="width:100%">
+		  	</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="img/participants.jpg" style="width:100%">
+		  	</div>
+			
+		  	<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="img/droptest.jpg" style="width:100%">
+		  	</div>
+		
+		  	<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="img/designExpo.jpg" style="width:100%">
+		  	</div>
+			
+		  	<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="img/iteration1fail.jpg" style="width:100%">
+		  	</div>
+			
+		  	<a class="prev" onclick="plusSlides(-1)">❮</a>
+		  	<a class="next" onclick="plusSlides(1)">❯</a>
+		
+		  	<div class="caption-container">
+				<p id="caption"></p>
+		  	</div>
+		
+		  	<div class="row">
+				<div class="column">
+			  		<img class="demo cursor" src="img/balloon.jpg" style="width:100%" onclick="currentSlide(1)" alt="Dragonfly (far right) on gondola while balloon is being inflated (Aug 2023)">
+				</div>
+				<div class="column">
+				  	<img class="demo cursor" src="img/teamwithgondola.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Evan Glenn, Alexander Terry, and Alex Hanna (from left) with the finished prototype 1 on the gondola in Ft Sumner, NM (Aug 2023)">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/participants.jpg" style="width:100%" onclick="currentSlide(3)" alt="Each of the teams with their vehicles in front of the gondola (Aug 2023)">
+				</div>
+				<div class="column">
+			  		<img class="demo cursor" src="img/droptest.jpg" style="width:100%" onclick="currentSlide(4)" alt="Purdue Dragonly team performing the drop test on the gondola (Aug 2023)">
+				</div>
+				<div class="column">
+			  		<img class="demo cursor" src="img/designExpo.jpg" style="width:100%" onclick="currentSlide(5)" alt="Purdue Dragonfly team presenting the Dragonfly at the Purdue Design Expo (Apr 2023)">
+				</div>    
+				<div class="column">
+			  		<img class="demo cursor" src="img/iteration1fail.jpg" style="width:100%" onclick="currentSlide(6)" alt="The team with the first flight test vehicle, which crashed and burned (Feb 2023)">
+				</div>
+		  	</div>
 		</div>
 	</section>
 
 	<!-- Footer section (links to social sites, footer)-->
 	<footer>
-		<div id="socialWrap">
-			<div>
-				<li><a target="_blank" href="https://twitter.com/Alexwh26" class="socialLink" id="twitterlink"><img
-							src="img/twitterlogo.png"></a></li>
-			</div>
-			<div>
-				<li><a target="_blank" href="https://www.linkedin.com/in/alex-hanna" class="socialLink"
-						id="linkedinlink"><img src="img/linkedinlogo.png"></a></li>
-			</div>
-			<div>
-				<li><a target="_blank" href="https://github.com/awh26" class="socialLink"><img
-							src="img/githublogo.png"></a></li>
-			</div>
-		</div>
 		<div id="underFooter" style="color:white;">
-			<p>Alex Hanna, Copyright &copy; 2020</p>
+			<p>Alex Hanna, Copyright &copy; 2023</p>
 		</div>
 	</footer>
 
