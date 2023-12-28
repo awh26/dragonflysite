@@ -1,7 +1,3 @@
-window.onload = function() {
-	document.getElementById("home").style.backgroundImage = "url(img/IMG_0832.jpeg)";
-}
-
 let slideIndex = 1;
 showSlides(slideIndex);
 

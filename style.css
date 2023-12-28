@@ -31,9 +31,17 @@ a:hover {
 	color: lightgrey;
 }
 
-/* Establishes all h2's as being purple and centered with some padding only on the top */
+/* Establishes all h2's */
 h2 {
 	color: #daaa00;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+/* Establishes all h3's as being purple and centered with some padding only on the top */
+h3 {
+	color: #daaa00;
+	font-style:italic;
 	padding-top: 1rem;
 	text-align: center;
 }
@@ -51,9 +59,11 @@ h2 {
 #home {
     background-attachment: fixed;
 	height: 100%;
-	width: 100%;
+	width: 100vw;
 	background-size: cover;
 	display:table;
+	background-image:url("img/IMG_0832.jpeg");
+	background-repeat:no-repeat;
 }
 
 .landing-text {
@@ -68,12 +78,6 @@ h2 {
 	font-size:8vw;
 	font-weight:3rem;
 	color: #1c1c1c;
-	-webkit-text-stroke-width: .1rem;
-}
-
-#landing li {
-	display: inline;
-	padding: 0 1.5rem 0 2rem;
 }
 
 #landing {
@@ -85,12 +89,6 @@ h2 {
 	margin-top: 1%;
 	margin-left: 1%;
 
-}
-
-#logo h1 {
-	margin: 0;
-	font-family: sans-serif;
-	transition: all 0.3s;
 }
 
 #scroll {
