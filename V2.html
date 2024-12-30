@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+    <!-- 
+		Dragonfly V2 Website
+		Domain - dragonfly.netlify.app/V2
+		Host - netlify.com
+		Last Updated: 12/28/24
+	-->
+<html>
+
+<head>
+	<!-- metadata-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keywords"
+		content="dragonfly,NASA,floating-dragon">
+	<meta property="og:image" content="img/logo.png">
+	<link rel="icon" href="img/logo.png">
+	<meta name="description" content="Purdue Dragonfly">
+	<meta name="author" content="Alex Hanna">
+	<title>Purdue Dragonfly</title>
+
+	<!-- Fonts import-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap"
+		rel="stylesheet">
+
+	<!-- Bootstrap import-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- JavaScript -->
+	<script src="script.js"></script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<a class="navbar-brand" href="index.html"><img src="img/logo.png" style="width:60px;"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  	<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+			<a class="nav-item nav-link" href="#vehicle">Vehicle</a>
+			<a class="nav-item nav-link" href="#specs">Design Specs</a>
+			<a class="nav-item nav-link" href="#profile">Mission Profile</a>
+			<a class="nav-item nav-link" href="#hardware">Hardware</a>
+            <a class="nav-item nav-link" href="#electronics">Electronics</a>
+			<a class="nav-item nav-link" href="#analysis">Analysis</a>
+			<a class="nav-item nav-link" href="#media">Media</a>
+            <a class="nav-item nav-link" href="V1.html">V1 Vehicle</a>
+
+
+		  </div>
+		</div>
+	  </nav>
+
+	<section id="landing" style="height:80vh;">
+		<div id="home" style="background-image:url('img/v2/landing2.jpg')">
+			<!-- name in center of screen-->
+			<div class="landing-text">
+                <!-- heading text -->
+				<h1 style="color:white;">
+					Dragonfly V2
+                </h1>
+				
+				<!-- scroll instruction-->
+				<a href="#about">
+					<p>&#8595;</p>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- vehicle section-->
+	<section id="vehicle" style="background-color:#1c1c1c;">
+		<div class="container">
+			<div class="row" style="padding-top:5vh; padding-bottom:3vh;">
+                <div class="col-md-6">
+                    <img src="img/v2/dragonflyV2.jpeg" style="width:80%;">
+                </div>
+                <div class="col-md-6">
+                    <img src="img/v2/cad2.PNG" style="width:80%;">
+                </div>
+			</div>
+            <div class="row" style="padding-bottom:5vh;">
+				<div class="col-md-6">
+					<img src="img/v2/frame-naked2.jpg" style="height:80%;">
+				</div>
+                <div class="col-md-6">
+					<img src="img/v2/frame2.png" style="width:80%;">
+				</div>
+			</div>
+        </div>
+	</section>
+
+    <!-- specs section-->
+	<section id="specs">
+		<div class="container">
+			<div class="row" style="padding-top:5vh; padding-bottom:5vh;">
+				<div class="col-md-6">
+					<h2>
+						Requirements
+					</h2>
+					<ul style="text-align:left; padding-top:2vh;">
+						<li>
+							Completely autonomous operation
+						</li>
+						<li>
+							110,000-120,000 ft drop altitude
+						</li>
+						<li>
+							Land within 800 ft radius of target location
+						</li>
+						<li>
+							Maximum 10kg weight
+						</li>
+						<li>
+							Must withstand 10g+ shocks
+						</li>
+						<li>
+							Must withstand -70 to +65 C temperatures, 4 - 11 mBar pressures 
+						</li>
+						<li>
+							Carry payload 0.25kg, 144 x 66 x 25mm
+						</li>
+						<li>
+							Descend in 1.5 hours or less 
+						</li>
+						<li>
+							Must be reusable
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-md-6" >
+					<h2>
+						Design Specs
+					</h2>
+					<p style="text-align:left; padding-left:5vw; padding-top:2vh;">
+						Weight: 5.1 kg
+						<br>
+						Dimensions: 120 x 120 x 45 cm
+						<br>
+						Wing Span: 118 cm
+						<br>
+						Wing Chord: 14 cm
+						<br>
+						Wing Airfoil: Clark Y
+						<br>
+						Tail Span: 32.6 cm
+						<br>
+						Tail Chord: 7.4 cm
+						<br>
+						Tail Airfoil: NACA 0012
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- mission profile section-->
+	<section id="profile" style="background-color:#1c1c1c;">
+		<div class="container" style="padding-bottom:5vh;">
+			<div class="row" style="padding-top:5vh; padding-bottom:2vh;">
+				<div class="col-md-12">
+					<h2>Mission Profile</h2>
+				</div>
+			</div>
+			<div class="row">
+				<img src="img/v2/missionprofile.png" style="width:100%">
+			</div>
+		</div>
+	</section>
+
+	<!-- features section-->
+	<section id="hardware">
+		<div class="container">
+			<div class="row" style="padding-top:5vh;">
+				<div class="col-md-12">
+					<h2>Hardware</h2>
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Airframe</h3>
+					<p style="text-align:left;">The main structure of the airframe of the V2 vehicle are two, 1" carbon fiber spars. 
+                        This is then enclosed by a composite (2 cm foam and 3 layers of fiberglass) shell. The foam acts as insulation in the extreme Antarctic environment and the fiberglass creates a hard shell to protect against external objects, provide extra stiffness, and is RF clear for GPS communications. 
+                    </p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/hardware/airframe2.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Wings</h3>
+					<p style="text-align:left;"></p>
+                    <ul style="text-align:left;">
+                        <li>Airfoil: Clark Y</li>
+                        <li>Span: 1.18 m</li>
+                        <li>Chord: 0.14 m</li>
+                        <li>Materials: Foam core, 2 layers of carbon fiber skin, PLA control surface</li>
+                        <li>Actuation: servo and torque rod connection</li>
+                    </ul>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/hardware/wing2.gif" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Tail</h3>
+                    <p style="text-align:left;">The tail is a traditional style with two horizontal components and a vertical components. These were sized initially based on volume coefficients of standard fixed wing aircraft. The size was then refined to ensure control authority is maintained during the pull up maneuver, thick enough structure to withstand loads, but thin enough to not have too big of a negative affect on longitudinal static stability.</p>
+                    <p>Horizontal tail</p>
+                    <ul style="text-align:left;">
+                        <li>Airfoil: NACA 0016</li>
+                        <li>Span: 0.32 m</li>
+                        <li>Chord: 0.07 m</li>
+                        <li>Materials: Foam core, 2 layers of carbon fiber, carbon fiber spars, PLA control surface</li>
+                        <li>Actuation: Servos and push rods (see actuation below)</li>
+                    </ul>
+                    <p>Vertical tail</p>
+                    <ul style="text-align:left;">
+                        <li>Airfoil: NACA 0016</li>
+                        <li>Span: 0.17 m</li>
+                        <li>Chord: 0.09 m</li>
+                        <li>Materials: Foam core, 2 layers of carbon fiber, carbon fiber spars, PLA control surface</li>
+                        <li>Actuation: Servos and push rods (see actuation below)</li>                    </ul>
+                </div>
+				<div class="col-md-6">
+					<img src="img/v2/hardware/tail2.jpg" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Mechanisms</h3>
+                    <p style="text-align:left;">To actuate the tail control surface, it was necessary to create a mechanism that includes a servo, push rod, and lever arm. This constraint is due to the parachute being in the rear of the aircraft and there not being enough room to put the servos directly in the tail and actuate with small push rods (as typically used in hobby RC aircraft) nor adjacent to the tail control surfaces and actuate using torque rods.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/hardware/mech2.gif" style="width:100%">
+				</div>
+			</div>
+            <div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Gondola Mount</h3>
+                    <p style="text-align:left;">The gondola mount is the physical and electrical interface between the NASA gondola and the vehicle. It is constructed using 6061 T6 Aluminum and 1/16" laser cut Aluminum braces. Within this frame, there are 4 batteries which supply extra heat to the vehicle before deployment, and a control panel which processes the NASA signal and retracts two linear actuators to release the vehicle.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/hardware/gondola2.png" style="width:100%">
+				</div>
+			</div>
+            <div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Heating System</h3>
+                    <p style="text-align:left;">The heating sytem consists of heaters, thermistors, a microcontroller, batteries, and aluminum plates. The microcontroller controls a simple control system between the heaters (output) and thermistors (measure). Aluminum plates are used for conductive heat transfer from the heaters to the electronic components in the near vacuum of 120,000 ft when there will be little air for thermal transfer through convection.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/electronics/avionics.png" style="width:100%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- electronics section-->
+	<section id="electronics" style="background-color:#1c1c1c;">
+		<div class="container">
+            <div class="row" style="padding-top:5vh;">
+				<div class="col-md-12">
+					<h2>Electronics</h2>
+				</div>
+			</div>
+            <div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Electronics Overall Schematic</h3>
+                    <p style="text-align:left;">The diagram to the left shows the overall electronics schematic. This depicts how different components and PCBs interact with each other between the vehicle and the gondola.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/electronics/electronicsSchematic.png" style="width:100%">
+				</div>
+			</div>
+            <div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Power Budget</h3>
+                    <p style="text-align:left;"></p>
+                    <ul style="text-align:left;">
+                        <li>Battery Packs: Lithium Ion 4 cell (14.8V)</li>
+                        <li>4 battery packs on gondola (13,600 mAh)</li>
+                        <li>3 battery packs on vehicle (10,200 mAh)</li>
+                        <li>Power sent from gondola to vehicle during setup and ascent to conserve vehicle power and weight</li>
+                        <li>FOS = 1.3</li>
+                    </ul>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/electronics/powerBudget.png" style="width:100%">
+				</div>
+			</div>
+            <div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Vehicle Power PCB</h3>
+                    <p style="text-align:left;"></p>
+                    <ul style="text-align:left;">
+                        <li>Battery inputs are protected with resettable fuses and diodes</li>
+                        <li>5V buck converters produce power for the heating control system electronics</li>
+                        <li>6V buck converts produce power for the servo motors</li>
+                        <li>Efficiency for these buck converts is about 90% efficient</li>
+                        <li>If the gondola batteries are connected, power originates from the gondola batteries. Otherwise, the aircraft batteries being to be used.</li>
+                        <li>A jumpstart circuit on the heating control system board jumpstarts the buck converters in case they fail to start</li>
+                    </ul>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/electronics/pcb1.png" style="width:100%">
+				</div>
+			</div>
+            <div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Heating PCB</h3>
+                    <p style="text-align:left;"></p>
+                    <ul style="text-align:left;">
+                        <li>Up to 7 thermal probes connect to heating control board</li>
+                        <li>4 separate heater circuits can be run at up to 3 A, 4 A net</li>
+                        <li>An ATMega328P microcontroller controls heating</li>
+                        <li>Another ATMega328P on the heating board monitors the power distribution output voltages and jumpstarts the buck regulators if they output low voltage</li>
+                        <li>A signal from the Raspberry Pi can disable the heating system</li>
+                        <li>Each microcontroller has programmer port and serial communication port that may be used for debugging</li>
+                    </ul>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/electronics/pcb2.png" style="width:100%">
+				</div>
+			</div>
+            <div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Gondola Control PCB</h3>
+                    <p style="text-align:left;"></p>
+                    <ul style="text-align:left;">
+                        <li>Resettable fuses and diodes protect parallel battery inputs </li>
+                        <li>Power is passed onto the aircraft power distribution system</li>
+                        <li>An ATMega328P monitors the deployment signal and actuates linear actuators that deploy the system once the deployment signal is received</li>
+                        <li>Linear actuators can be driven in forward or reverse polarity</li>
+                        <li>Overriding controls allow for manual control of the linear actuators</li>
+                        <li>Board displays power, ready, and fault connectors, indicating system status</li>
+                    </ul>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/electronics/pcb3.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:5vh;">
+				<div class="col-md-6">
+					<h3>Autopilot/Controls</h3>
+                    <p style="text-align:left;">Similar to V1, Raspberry Pi Zero and Pixhawk 6c are being used together as flight controller. To determine altitude, we rely on the pressure reading from a Pitot tube along with GPS Data. Pixhawk 6c has internal IMUs and barometer, we can rely on IMU to achieve stable flight and set our attitudes and the magnetometer will provide heading.
+                    </p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/electronics/avionics.png" style="width:100%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+    <!-- analysis section-->
+	<section id="analysis">
+		<div class="container">
+			<div class="row" style="padding-top:5vh;">
+				<div class="col-md-12">
+					<h2>Analysis</h2>
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Stability and Controllability</h3>
+					<p style="text-align:left;">Stability and controllability analysis was performed using XFLR5. Longitudinal stability (measured by static margin) and lateral/directional stability were studied in order to ensure that the system could maintain static and dynamic stability throughout flight.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/testing/xflr2.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Gondola FEA</h3>
+					<p style="text-align:left;">Finite element analysis was performed on the gondola to determine whether the system would be able to withstand a 10g shock and not prematruely drop the node. This was especially important for the first FLOATing DRAGON campaign because the node could not be dropped prematurely over populus areas of New Mexico. FEA was presented at the structural design review with NASA in April 2023 and again revisited in the flight readiness review in July 2023.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v1/testing/gondolaFEA.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Vehicle Structural Analysis</h3>
+					<p style="text-align:left;">Hand calculations, physical tests, and finite element analysis were performed on vehicle components to ensure that the structures would be able to maintain forces endured during the mission. This includes wing bending, enduring gusts, and shock from the parachute deployment.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/testing/vehicle2.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:3vh;">
+				<div class="col-md-6">
+					<h3>Heating Batteries vs. Insulation Trade-off</h3>
+					<p style="text-align:left;">To correctly determine how many batteries and how much insulation should be used, the team conducted a trade study on this tradeoff. Theoretically, there would be a number of batteries and insulation thickness that minimizes weight. As it turned out, due to sun radiation at altitude, the vehicle would actually have a <i>cooling</i> problem. However on the ground in frigid Antarctic temperatures, insulation and batteries would be necessary to keep the electronics within operating temperature ranges.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/testing/heatingvsinsul.png" style="width:100%">
+				</div>
+			</div>
+			<div class="row" style="padding-bottom:5vh;">
+				<div class="col-md-6">
+					<h3>Mission Profile Feasbility</h3>
+					<p style="text-align:left;">To ensure that the vehicle never goes trans or supersonic while also having enough control authority to perform any manuevers necessary, analysis was done using MATLAB and XFLR5 to characterize the vehicle's flight.</p>
+				</div>
+				<div class="col-md-6">
+					<img src="img/v2/testing/missionAnalysis.png" style="width:100%">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- media section-->
+	<section id="media" style="padding-top:5vh; padding-bottom:5vh; background-color:#1c1c1c">
+		<h2 style="text-align:center; padding-bottom:2vh;">Media</h2>
+		<p style="text-align:center;"><i>(click on an image below to get started)</i></p>
+		
+		<div class="container">
+		  	<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="img/v2/media/IMG4.jpg" style="height:70vh">
+		  	</div>
+		
+		  	<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="img/v2/media/IMG5.jpg" style="height:70vh">
+		  	</div>
+		
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="img/v2/media/IMG6.jpg" style="height:70vh">
+		  	</div>
+			
+		  	<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="img/v2/media/image003.png" style="height:70vh">
+		  	</div>
+		
+		  	<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="img/v2/media/IMG7.jpg" style="height:70vh">
+		  	</div>
+			
+		  	<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="img/v2/media/IMG8.jpg" style="height:70vh">
+		  	</div>
+			
+		  	<a class="prev" onclick="plusSlides(-1)">❮</a>
+		  	<a class="next" onclick="plusSlides(1)">❯</a>
+		
+		  	<div class="caption-container">
+				<p id="caption"></p>
+		  	</div>
+		
+		  	<div class="row">
+				<div class="column">
+			  		<img class="demo cursor" src="img/v2/media/IMG4.JPG" style="width:100%" onclick="currentSlide(1)" alt="Last minute adjustments to the deployment system and vehicle">
+				</div>
+				<div class="column">
+				  	<img class="demo cursor" src="img/v2/media/IMG5.jpg" style="width:100%" onclick="currentSlide(2)" alt="Fiberglassing the fuselage">
+				</div>
+				<div class="column">
+					<img class="demo cursor" src="img/v2/media/IMG6.jpg" style="width:100%" onclick="currentSlide(3)" alt="Setting up a test on the deployment actuators">
+				</div>
+				<div class="column">
+			  		<img class="demo cursor" src="img/v2/media/image003.png" style="width:100%" onclick="currentSlide(4)" alt="The vehicle on the gondola in Antactica (Dec 2024)">
+				</div>
+				<div class="column">
+			  		<img class="demo cursor" src="img/v2/media/IMG7.JPG" style="width:100%" onclick="currentSlide(5)" alt="The team walking with the vehicle at NASA CSBF (Jun 2024)">
+				</div>    
+				<div class="column">
+			  		<img class="demo cursor" src="img/v2/media/img8.jpg" style="width:100%" onclick="currentSlide(6)" alt="Abhi working on the vehicle electronics at NASA CSBF (Jun 2024)">
+				</div>
+		  	</div>
+		</div>
+	</section>
+
+	<!-- Footer section (links to social sites, footer)-->
+	<footer>
+		<div id="underFooter" style="color:white;">
+			<p>Purdue Dragonfly, Copyright &copy; 2023</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
